@@ -11,7 +11,12 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import logging
 import os
+import re
+import json
+
+logging.log(logging.INFO, 'loading settings for ' + __name__)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -36,7 +41,17 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
+    'django_extensions',
+    'rest_framework',
+    'bootstrap_pagination',
+    'debug_toolbar',
+    'easy_thumbnails',
+    'taggit',
+    'imagekit',
+    'applications.websites',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -100,3 +115,26 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+IGNORABLE_404_URLS = (
+    re.compile(r'\.(php|cgi)$'),
+    re.compile(r'^/phpmyadmin/'),
+    re.compile(r'^/apple-touch-icon.*\.png$'),
+    re.compile(r'^/favicon\.ico$'),
+    re.compile(r'^/robots\.txt$'),
+)
+
+FILE_UPLOAD_PERMISSIONS = 0o644
+
+SESSION_COOKIE_AGE = 3600
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_SAVE_EVERY_REQUEST = True
+
+
+#easy thumbnails settings
+THUMBNAIL_ALIASES = {
+        'mini': {'size': (50, 50), 'crop': False},
+        'medio': {'size': (300, 300), 'crop': False},
+}
+DEFAULT_MASCOTA_IMAGE_SETTING = THUMBNAIL_ALIASES['medio']
