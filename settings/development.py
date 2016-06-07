@@ -1,5 +1,7 @@
 from .base import *
 
+DEBUG = True
+
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -79,3 +81,5 @@ STATIC_ROOT = os.path.join('staticfiles_dev')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+ALLOWED_HOSTS = ['*']

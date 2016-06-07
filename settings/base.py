@@ -26,7 +26,7 @@ SECRET_KEY = 'r#2(@kk#2&cc5(4vw74neqk4skig-50v0tt960wgk)#c&dqv#8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -128,3 +128,6 @@ THUMBNAIL_ALIASES = {
         'medio': {'size': (300, 300), 'crop': False},
 }
 DEFAULT_MASCOTA_IMAGE_SETTING = THUMBNAIL_ALIASES['medio']
+
+
+SITE_ID = 1

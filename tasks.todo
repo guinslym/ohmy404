@@ -1,4 +1,15 @@
 todo:
- ☐ Configuration of the projects for Bluehost
- ☐ Adding applications and Third-parties
- ☐ adding Gif (know how to create a GIF image of a website)
+✔ Configuration of the projects for Bluehost @done(2016-06-07 18:40)
+✔ Adding applications and Third-parties @done(2016-06-07 18:42)
+✔ Model add fixture to see if everything works @done(2016-06-07 19:02)
+✔ Create ListView @done(2016-06-07 19:20)
+☐ Remove the Author
+☐ Create a DetailView
+☐ Create a template
+☐ Verify the Thumbnail
+☐ Adding a contact form
+☐ In settings .. Manage Static or Media folder for photo uploaded
+☐ This contact form will add or create a file containing the suggested 404 links
+☐ A cron Job will send one email per day containing the list of urls
+☐ adding Gif (know how to create a GIF image of a website)
+☐ Add React of Angular
