@@ -5,8 +5,8 @@ todo:
 ✔ Create ListView @done(2016-06-07 19:20)
 ☐ Remove the Author
 ☐ Create a DetailView
-☐ Create a template
-☐ Verify the Thumbnail
+✔ Create a template @done(2016-06-07 19:29)
+✔ Verify the Thumbnail @done(2016-06-07 19:29)
 ☐ Adding a contact form
 ☐ In settings .. Manage Static or Media folder for photo uploaded
 ☐ This contact form will add or create a file containing the suggested 404 links
