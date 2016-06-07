@@ -20,8 +20,8 @@ class WebsitesListView(ListView):
 
 class WebsitesDetailView(DetailView):
 
-    model = websites404
-    template_name = "websites/websites_detail.html"
+    model = website404
+    template_name = "websites/websites404_detail.html"
 
     def get_context_data(self, **kwargs):
         context = super(WebsitesDetailView, self).get_context_data(**kwargs)

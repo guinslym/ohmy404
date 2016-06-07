@@ -1,7 +1,10 @@
 <h1>Websites</h1>
 <ul>
 {% for article in object_list %}
-    <li>{{ article.created|date }} - {{ article.title }}</li>
+<li>{{ article.created|date }} - {{ article.title }}</li>
+    <ul>
+      <li>{{ article.slug }}</li>
+    </ul>
 {% empty %}
     <li>No articles yet.</li>
 {% endfor %}
