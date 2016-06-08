@@ -20,6 +20,7 @@ from django.contrib import admin
 
 handler404 = 'applications.websites.views.handler404'
 handler500 = 'applications.websites.views.handler500'
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
      url(r'^', include('applications.websites.urls')),
