@@ -1,15 +1,9 @@
 todo-mvp:
 ☐ Remove the Author
-✔ Create a DetailView @done(2016-06-07 19:53)
-  ✔ Have a bug in the URLS for details @done(2016-06-07 19:53)
-  ✔ Check to see in Django Example how to deal with the details slugs @done(2016-06-07 19:53)
-  ✔ Add reverse url in the models @done(2016-06-07 19:53)
-☐ In settings .. Manage Static or Media folder for photo uploaded
 ☐ Adding a contact form (add suggestions)
 ☐ Add Google-recaptcha
 ☐ This contact form will add or create a file containing the suggested 404 links
 ☐ Add React of Angular
-✔ Remove the extra folder 'websites' in the Templates @done(2016-06-07 19:54)
 ☐ Check to see templates on the web
 ☐ A cron Job will send one email per day containing the list of urls
 ☐ adding Gif (know how to create a GIF image of a website)
@@ -17,6 +11,12 @@ todo-mvp:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+  ✔ Create a DetailView @done(2016-06-07 19:53)
+  ✔ Have a bug in the URLS for details @done(2016-06-07 19:53)
+  ✔ Check to see in Django Example how to deal with the details slugs @done(2016-06-07 19:53)
+  ✔ Add reverse url in the models @done(2016-06-07 19:53)
+  ✔ In settings .. Manage Static or Media folder for photo uploaded @done(2016-06-07 20:02)
+  ✔ Remove the extra folder 'websites' in the Templates @done(2016-06-07 19:54)
   ✔ Configuration of the projects for Bluehost @done(2016-06-07 18:40)
   ✔ Adding applications and Third-parties @done(2016-06-07 18:42)
   ✔ Model add fixture to see if everything works @done(2016-06-07 19:02)
