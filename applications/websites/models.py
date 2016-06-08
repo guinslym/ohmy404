@@ -7,6 +7,7 @@ from easy_thumbnails.fields import ThumbnailerImageField
 from taggit.managers import TaggableManager
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
+from django.db.models import F
 
 class website404(TimeStampedModel):
     """
@@ -17,7 +18,8 @@ class website404(TimeStampedModel):
     )
     #author = models.ForeignKey(settings.AUTH_USER_MODEL)
     title = models.CharField(max_length=60, blank=True, null=True)
-    url = models.URLField(blank=True, null=True)
+    url = models.URLField(blank=True, null=True, help_text="The 404 url")
+    total_views = models.PositiveIntegerField(blank=True, null=True)
     #description = models.TextField(blank=True, null=True, help_text="Please write about what user will benefit from subscribing to this Event.")
     screenshot = models.ImageField(upload_to='404/%Y/%m/%d', null=True, blank=True)
     screenshot_thumbnail = ImageSpecField(source='screenshot',
@@ -33,9 +35,12 @@ class website404(TimeStampedModel):
     def __str__(self):
         return 'Title: {}'.format(self.title)
 
+    def update_counter(self):
+        self.total_views = F('total_views') + 1
+        self.save(update_fields=['total_views'])
+
     def get_absolute_url(self):
         return reverse('websites:websites_detail', kwargs={'slug': self.slug})
-
 
     class Meta:
         app_label = 'websites'

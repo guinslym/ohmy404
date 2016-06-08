@@ -19,6 +19,7 @@ INSTALLED_APPS = (
     'taggit',
     'imagekit',
     'pipeline',
+    'captcha',
     'applications.websites',
 )
 

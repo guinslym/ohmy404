@@ -1,21 +1,29 @@
 todo-mvp:
 ✔ Add a base template @done(2016-06-08 15:03)
 ✔ Templates @done(2016-06-08 15:03)
-  ☐ Needs to be unfinite scrolling (search on the web)
+  ✔ Needs to be unfinite scrolling (search on the web) @done(2016-06-08 16:26)
   ☐ Needs to have pagination
   ✔ Needs to show a lot of screenshots wideshot like unsplash (easy) @done(2016-06-08 15:03)
-☐ Remove the Author
-☐ Remove the Description
-☐ Adding a contact form (add suggestions)
-☐ Add Google-recaptcha
-☐ This contact form will add or create a file containing the suggested 404 links
-☐ A cron Job will send one email per day containing the list of urls
+✔ Remove the Author @done(2016-06-08 15:03)
+✔ Remove the Description @done(2016-06-08 15:03)
+✔ Adding a contact form --- MVC -- use sugbox instead (add suggestions) @done(2016-06-08 15:33)
+✔ Add Google-recaptcha -- use Sugbox instead @done(2016-06-08 15:33)
+✔ This contact form will add or create a file containing the suggested 404 links @done(2016-06-08 15:34)
+✔ A cron Job will send one email per day containing the list of urls @done(2016-06-08 15:34)
 ☐ adding Gif (know how to create a GIF image of a website)
-☐ Serve static with WhiteNoise
-☐ Add React of Angular
-☐ Add a 404
+✔ Serve static with WhiteNoise @done(2016-06-08 15:34)
+☐ Add a click counter (AJAX)
+✔ Add total_views in the models @done(2016-06-08 15:45)
+✔ Add a backdoor to increase the  number of views @done(2016-06-08 16:17)
+✔ Add ajax click to update counter instead @done(2016-06-08 16:27)
+✔ Add a 404 and 500 @done(2016-06-08 16:35)
 ☐ Create an api
-☐ Add a click counter
+☐ Add jumbotron 'Awesome-404 or Ohmy404'
+☐ Add About us or Github logo
+☐ Add React of Angular
+☐ Adding dot.env or  python-decouple
+☐ Add sugbox
+☐ Think about MVC --- to finish it
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
