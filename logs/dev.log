@@ -490,3 +490,339 @@ Traceback (most recent call last):
   File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/loader.py", line 76, in select_template
     raise TemplateDoesNotExist(', '.join(template_name_list))
 django.template.base.TemplateDoesNotExist: websites/website404_list.html
+ERROR 2016-06-07 19:51:30,859 base.py handle_uncaught_exception 256 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 501, in render
+    current_app=current_app)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'settings.websites-detail' with arguments '('',)' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/utils/six.py", line 686, in reraise
+    raise value
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'websites-detail' with arguments '('',)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<slug>[-\\w]+)/$']
+ERROR 2016-06-07 19:51:30,859 base.py handle_uncaught_exception 256 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 501, in render
+    current_app=current_app)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'settings.websites-detail' with arguments '('',)' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/utils/six.py", line 686, in reraise
+    raise value
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'websites-detail' with arguments '('',)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<slug>[-\\w]+)/$']
+ERROR 2016-06-07 19:51:30,859 base.py handle_uncaught_exception 256 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 501, in render
+    current_app=current_app)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'settings.websites-detail' with arguments '('',)' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/utils/six.py", line 686, in reraise
+    raise value
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'websites-detail' with arguments '('',)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<slug>[-\\w]+)/$']
+ERROR 2016-06-07 20:00:57,112 base.py handle_uncaught_exception 256 Internal Server Error: /radio-canada/
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 819, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageCacheFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/debug.py", line 89, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 648, in resolve
+    obj = self.var.resolve(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 789, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 827, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 84, in url
+    return self._storage_attr('url')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 74, in _storage_attr
+    existence_required.send(sender=self, file=self)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/dispatch/dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/registry.py", line 53, in existence_required_receiver
+    self._receive(file, 'on_existence_required')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/registry.py", line 61, in _receive
+    call_strategy_method(file, callback)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/utils.py", line 151, in call_strategy_method
+    fn(file)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/strategies.py", line 15, in on_existence_required
+    file.generate()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 93, in generate
+    self.cachefile_backend.generate(self, force)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/backends.py", line 109, in generate
+    self.generate_now(file, force=force)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/backends.py", line 96, in generate_now
+    file._generate()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 97, in _generate
+    content = generate(self.generator)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/utils.py", line 134, in generate
+    content = generator.generate()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/specs/__init__.py", line 149, in generate
+    img = open_image(self.source)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/pilkit/utils.py", line 21, in open_image
+    target.seek(0)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/files/utils.py", line 20, in <lambda>
+    seek = property(lambda self: self.file.seek)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/db/models/fields/files.py", line 51, in _get_file
+    self._file = self.storage.open(self.name, 'rb')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/files/storage.py", line 37, in open
+    return self._open(name, mode)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/files/storage.py", line 201, in _open
+    return File(open(self.path(name), mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/guinsly/development/public/project/ohmy404/media/404/2016/06/07/Screenshot_from_2016-04-27_095930.png'
+ERROR 2016-06-07 20:00:57,112 base.py handle_uncaught_exception 256 Internal Server Error: /radio-canada/
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 819, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageCacheFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/debug.py", line 89, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 648, in resolve
+    obj = self.var.resolve(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 789, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 827, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 84, in url
+    return self._storage_attr('url')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 74, in _storage_attr
+    existence_required.send(sender=self, file=self)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/dispatch/dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/registry.py", line 53, in existence_required_receiver
+    self._receive(file, 'on_existence_required')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/registry.py", line 61, in _receive
+    call_strategy_method(file, callback)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/utils.py", line 151, in call_strategy_method
+    fn(file)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/strategies.py", line 15, in on_existence_required
+    file.generate()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 93, in generate
+    self.cachefile_backend.generate(self, force)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/backends.py", line 109, in generate
+    self.generate_now(file, force=force)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/backends.py", line 96, in generate_now
+    file._generate()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 97, in _generate
+    content = generate(self.generator)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/utils.py", line 134, in generate
+    content = generator.generate()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/specs/__init__.py", line 149, in generate
+    img = open_image(self.source)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/pilkit/utils.py", line 21, in open_image
+    target.seek(0)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/files/utils.py", line 20, in <lambda>
+    seek = property(lambda self: self.file.seek)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/db/models/fields/files.py", line 51, in _get_file
+    self._file = self.storage.open(self.name, 'rb')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/files/storage.py", line 37, in open
+    return self._open(name, mode)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/files/storage.py", line 201, in _open
+    return File(open(self.path(name), mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/guinsly/development/public/project/ohmy404/media/404/2016/06/07/Screenshot_from_2016-04-27_095930.png'
+ERROR 2016-06-07 20:00:57,112 base.py handle_uncaught_exception 256 Internal Server Error: /radio-canada/
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 819, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageCacheFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/response.py", line 135, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/debug.py", line 89, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 648, in resolve
+    obj = self.var.resolve(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 789, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 827, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 84, in url
+    return self._storage_attr('url')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 74, in _storage_attr
+    existence_required.send(sender=self, file=self)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/dispatch/dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/registry.py", line 53, in existence_required_receiver
+    self._receive(file, 'on_existence_required')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/registry.py", line 61, in _receive
+    call_strategy_method(file, callback)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/utils.py", line 151, in call_strategy_method
+    fn(file)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/strategies.py", line 15, in on_existence_required
+    file.generate()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 93, in generate
+    self.cachefile_backend.generate(self, force)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/backends.py", line 109, in generate
+    self.generate_now(file, force=force)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/backends.py", line 96, in generate_now
+    file._generate()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/cachefiles/__init__.py", line 97, in _generate
+    content = generate(self.generator)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/utils.py", line 134, in generate
+    content = generator.generate()
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/imagekit/specs/__init__.py", line 149, in generate
+    img = open_image(self.source)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/pilkit/utils.py", line 21, in open_image
+    target.seek(0)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/files/utils.py", line 20, in <lambda>
+    seek = property(lambda self: self.file.seek)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/db/models/fields/files.py", line 51, in _get_file
+    self._file = self.storage.open(self.name, 'rb')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/files/storage.py", line 37, in open
+    return self._open(name, mode)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/files/storage.py", line 201, in _open
+    return File(open(self.path(name), mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/guinsly/development/public/project/ohmy404/media/404/2016/06/07/Screenshot_from_2016-04-27_095930.png'

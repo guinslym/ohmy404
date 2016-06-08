@@ -9,7 +9,7 @@ from .models import website404
 class WebsitesListView(ListView):
 
     model = website404
-    template_name = "websites/websites_list.html"
+    template_name = "websites_list.html"
     ordering = '-created'
 
     def get_context_data(self, **kwargs):
@@ -21,7 +21,7 @@ class WebsitesListView(ListView):
 class WebsitesDetailView(DetailView):
 
     model = website404
-    template_name = "websites/websites404_detail.html"
+    template_name = "websites404_detail.html"
 
     def get_context_data(self, **kwargs):
         context = super(WebsitesDetailView, self).get_context_data(**kwargs)

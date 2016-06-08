@@ -3,7 +3,7 @@
 {% for article in object_list %}
 <li>{{ article.created|date }} - {{ article.title }}</li>
     <ul>
-      <li>{{ article.slug }}</li>
+      <li><a href="{% url "websites_detail" article.slug %}">{{ article.slug }}</a></li>
     </ul>
 {% empty %}
     <li>No articles yet.</li>

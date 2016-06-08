@@ -32,10 +32,10 @@ class website404(TimeStampedModel):
 
     def __str__(self):
         return 'Title: {}'.format(self.title)
-    '''
+
     def get_absolute_url(self):
-        return reverse('websites:detail', kwargs={'slug': self.slug})
-    '''
+        return reverse('websites:websites_detail', kwargs={'slug': self.slug})
+
 
     class Meta:
         app_label = 'websites'
