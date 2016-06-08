@@ -18,6 +18,7 @@ INSTALLED_APPS = (
     'easy_thumbnails',
     'taggit',
     'imagekit',
+    'pipeline',
     'applications.websites',
 )
 
@@ -83,3 +84,32 @@ STATICFILES_DIRS = (
 )
 
 ALLOWED_HOSTS = ['*']
+
+
+
+#Pipeline for staticfiles
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'pipeline.finders.PipelineFinder',
+)
+PIPELINE = {
+    'PIPELINE_ENABLED': False,
+    'JAVASCRIPT': {
+        'standard': {
+            'source_filenames': {
+                'applications.websites/templates/js/*.js',
+            },
+            'output_filename': 'js/std.js',
+        },
+    },
+    'STYLESHEETS': {
+        'standard': {
+            'source_filenames': {
+                'applications.websites/templates/css/*.css',
+            },
+            'output_filename': 'std.css',
+        },
+    },
+}

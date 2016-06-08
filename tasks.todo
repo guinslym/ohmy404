@@ -1,16 +1,30 @@
 todo-mvp:
+✔ Add a base template @done(2016-06-08 15:03)
+✔ Templates @done(2016-06-08 15:03)
+  ☐ Needs to be unfinite scrolling (search on the web)
+  ☐ Needs to have pagination
+  ✔ Needs to show a lot of screenshots wideshot like unsplash (easy) @done(2016-06-08 15:03)
 ☐ Remove the Author
+☐ Remove the Description
 ☐ Adding a contact form (add suggestions)
 ☐ Add Google-recaptcha
 ☐ This contact form will add or create a file containing the suggested 404 links
-☐ Add React of Angular
-☐ Check to see templates on the web
 ☐ A cron Job will send one email per day containing the list of urls
 ☐ adding Gif (know how to create a GIF image of a website)
 ☐ Serve static with WhiteNoise
+☐ Add React of Angular
+☐ Add a 404
+☐ Create an api
+☐ Add a click counter
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+  ✔ Check to see templates on the web @done(2016-06-08 14:48)
+  ✔ Needs to have a Navbar (bootstrap) @done(2016-06-07 21:55)
+  ✔ Needs to have another VCARDS type (smaller or image only) @done(2016-06-07 22:02)
+  ✔ Needs to have a menu (About + Add a link) (bootstrap) @done(2016-06-07 21:57)
+  ✔ Needs to show a multiple screenshots side-by-side (easy) (bootsnipp) @done(2016-06-07 22:03)
+  ✔ Search bar for tags.. (out of the MVP) @done(2016-06-07 22:03)
   ✔ Create a DetailView @done(2016-06-07 19:53)
   ✔ Have a bug in the URLS for details @done(2016-06-07 19:53)
   ✔ Check to see in Django Example how to deal with the details slugs @done(2016-06-07 19:53)

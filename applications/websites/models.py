@@ -15,10 +15,10 @@ class website404(TimeStampedModel):
         ('draft', 'Draft'),
         ('published', 'Published'),
     )
-    author = models.ForeignKey(settings.AUTH_USER_MODEL)
+    #author = models.ForeignKey(settings.AUTH_USER_MODEL)
     title = models.CharField(max_length=60, blank=True, null=True)
     url = models.URLField(blank=True, null=True)
-    description = models.TextField(blank=True, null=True, help_text="Please write about what user will benefit from subscribing to this Event.")
+    #description = models.TextField(blank=True, null=True, help_text="Please write about what user will benefit from subscribing to this Event.")
     screenshot = models.ImageField(upload_to='404/%Y/%m/%d', null=True, blank=True)
     screenshot_thumbnail = ImageSpecField(source='screenshot',
                                       processors=[ResizeToFill(100, 50)],

@@ -1,11 +1,39 @@
-<h1>Websites</h1>
-<ul>
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block content %}
+    <div class="row content">
 {% for article in object_list %}
-<li>{{ article.created|date }} - {{ article.title }}</li>
-    <ul>
-      <li><a href="{% url "websites_detail" article.slug %}">{{ article.slug }}</a></li>
-    </ul>
+        <div class="col-md-8 col-md-offset-2 content-404">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="{{ article.screenshot.url }}">
+
+                </div><!-- card image -->
+
+                <div class="card-content">
+                    <span class="card-title">{{ article.title }}</span>
+                    <button type="button" id="show" class="btn btn-custom pull-right" aria-label="Left Align">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div><!-- card content -->
+                <div class="card-action">
+                    <a href="#" target="new_blank">Description</a>
+                    <a href="#" target="new_blank">Website</a>
+                    <a href="#" target="new_blank">Tags</a>
+                </div><!-- card actions -->
+                <div class="card-reveal">
+                    <span class="card-title">Card Title</span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div><!-- card reveal -->
+            </div>
+<hr>
+        </div>
 {% empty %}
-    <li>No articles yet.</li>
+   <p>
+     There is no 404 screenshots available
+   </p>
 {% endfor %}
-</ul>
+
+</div>
+{% endblock %}
