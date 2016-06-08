@@ -17,7 +17,7 @@ class WebsitesListView(ListView):
     model = website404
     template_name = "websites_list.html"
     ordering = '-created'
-    paginate_by=2
+    paginate_by=3
 
     def get_context_data(self, **kwargs):
         context = super(WebsitesListView, self).get_context_data(**kwargs)

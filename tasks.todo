@@ -1,19 +1,31 @@
 todo-mvp:
-☐ adding Gif (know how to create a GIF image of a website)
-✔ Customize the navbar @done(2016-06-08 16:51)
-☐ Add a click counter (AJAX)
-☐ Create an api
-☐ Add jumbotron 'Awesome-404 or Ohmy404'
-☐ Add About us or Github logo
-☐ Add Procfile
-☐ Add React of Angular
-☐ Adding dot.env or  python-decouple
-☐ Add sugbox
 ☐ Think about MVC --- to finish it
+✔ Frontend @done(2016-06-08 17:41)
+✔ remove spaces (padding) @done(2016-06-08 17:41)
+✔ Jumbotron @done(2016-06-08 17:29)
+  ✔ Wow.js --- remove --- too much bugs @done(2016-06-08 17:29)
+  ✔ Footer @done(2016-06-08 17:28)
+  ☐ Add sugbox
+☐ Settings to setup for Production
+✔ Add date added @done(2016-06-08 17:41)
+  ✔ Css to add in a file @done(2016-06-08 17:41)
+
+
+out-of-the-MVC:
 ☐ A websites can Have many images
+☐ Add a click counter (AJAX)
+☐ Add jumbotron 'Awesome-404 or Ohmy404'
+☐ adding Gif (know how to create a GIF image of a website)
+☐ Adding dot.env or  python-decouple
+☐ Create an api
+☐ Add login so that user can Votes (up | down)
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+  ✔ Customize the navbar @done(2016-06-08 16:51)
+  ✔ Add Procfile @done(2016-06-08 16:59)
+  ✔ Add runtime.txt @done(2016-06-08 16:59)
+  ☐ Add React of Angular
   ✔ Add a base template @done(2016-06-08 15:03)
   ✔ Templates @done(2016-06-08 15:03)
   ✔ Needs to be unfinite scrolling (search on the web) @done(2016-06-08 16:26)
