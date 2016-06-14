@@ -6,14 +6,19 @@ todo-mvp:
   ✔ Wow.js --- remove --- too much bugs @done(2016-06-08 17:29)
   ✔ Footer @done(2016-06-08 17:28)
   ☐ Add sugbox
+☐ Send a Suggies instead of 'Add' a suggies
 ☐ Settings to setup for Production
+☐ Title the title GITHUB.COM
 ✔ Add date added @done(2016-06-08 17:41)
   ✔ Css to add in a file @done(2016-06-08 17:41)
 
 
 out-of-the-MVC:
 ☐ A websites can Have many images
+☐ Test to do.
+☐ Add social so that user can vote 404
 ☐ Add a click counter (AJAX)
+☐ Add AJAX pagination
 ☐ Add jumbotron 'Awesome-404 or Ohmy404'
 ☐ adding Gif (know how to create a GIF image of a website)
 ☐ Adding dot.env or  python-decouple
