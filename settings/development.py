@@ -1,6 +1,6 @@
 from .base import *
 
-DEBUG = False
+DEBUG = True
 
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -18,7 +18,7 @@ INSTALLED_APPS = (
     'easy_thumbnails',
     'taggit',
     'imagekit',
-    'pipeline',
+    #'pipeline',
     'captcha',
     'applications.websites',
 )
