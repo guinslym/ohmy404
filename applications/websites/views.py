@@ -12,23 +12,33 @@ from django.template import Context
 
 from .models import website404
 
+import logging
+logger = logging.getLogger(__name__)
+logger.info('On WebsitesListView')
+print('hello')
+
 class WebsitesListView(ListView):
 
     model = website404
     template_name = "websites_list.html"
     ordering = '-created'
     paginate_by=3
+    logger.info('On WebsitesListView')
 
     def get_context_data(self, **kwargs):
+        logger.info('On WebsitesListView')
+        print(self.request.META['REMOTE_ADDR'])
         context = super(WebsitesListView, self).get_context_data(**kwargs)
         context['now'] = timezone.now()
         return context
+
 
 
 class WebsitesDetailView(DetailView):
 
     model = website404
     template_name = "websites404_detail.html"
+    logger.info('On WebsitesDetailView')
 
     def get_context_data(self, **kwargs):
         context = super(WebsitesDetailView, self).get_context_data(**kwargs)
