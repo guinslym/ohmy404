@@ -146,3 +146,153 @@ Traceback (most recent call last):
   File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 430, in find_filter
     raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
 django.template.base.TemplateSyntaxError: Invalid filter: 'capitalize'
+ERROR 2016-06-21 23:01:56,529 base.py handle_uncaught_exception 256 Internal Server Error: /klsjdflska
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 387, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'klsjdflska', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'applications.websites.urls' from '/home/guinsly/development/public/project/ohmy404/applications/websites/urls.py'> (None:None) ^>, <RegexURLPattern None ^about/>], [<RegexURLResolver <module 'applications.websites.urls' from '/home/guinsly/development/public/project/ohmy404/applications/websites/urls.py'> (None:None) ^>, <RegexURLPattern websites_list ^$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 87, in get_exception_response
+    response = callback(request, **param_dict)
+  File "/home/guinsly/development/public/project/ohmy404/applications/websites/views.py", line 49, in handler404
+    response = render(request, 'page_not_found.html')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 919, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 919, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 16, in url
+    return static(path)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 9, in static
+    return staticfiles_storage.url(path)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 131, in url
+    hashed_name = self.stored_name(clean_name)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 280, in stored_name
+    cache_name = self.clean_name(self.hashed_name(name))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 94, in hashed_name
+    (clean_name, self))
+ValueError: The file 'css/Demo.css' could not be found with <pipeline.storage.PipelineCachedStorage object at 0xb488538c>.
+ERROR 2016-06-21 23:01:56,529 base.py handle_uncaught_exception 256 Internal Server Error: /klsjdflska
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 387, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'klsjdflska', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'applications.websites.urls' from '/home/guinsly/development/public/project/ohmy404/applications/websites/urls.py'> (None:None) ^>, <RegexURLPattern None ^about/>], [<RegexURLResolver <module 'applications.websites.urls' from '/home/guinsly/development/public/project/ohmy404/applications/websites/urls.py'> (None:None) ^>, <RegexURLPattern websites_list ^$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 87, in get_exception_response
+    response = callback(request, **param_dict)
+  File "/home/guinsly/development/public/project/ohmy404/applications/websites/views.py", line 49, in handler404
+    response = render(request, 'page_not_found.html')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 919, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 919, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 16, in url
+    return static(path)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 9, in static
+    return staticfiles_storage.url(path)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 131, in url
+    hashed_name = self.stored_name(clean_name)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 280, in stored_name
+    cache_name = self.clean_name(self.hashed_name(name))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 94, in hashed_name
+    (clean_name, self))
+ValueError: The file 'css/Demo.css' could not be found with <pipeline.storage.PipelineCachedStorage object at 0xb488538c>.
+ERROR 2016-06-21 23:01:56,529 base.py handle_uncaught_exception 256 Internal Server Error: /klsjdflska
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/urlresolvers.py", line 387, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'klsjdflska', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'applications.websites.urls' from '/home/guinsly/development/public/project/ohmy404/applications/websites/urls.py'> (None:None) ^>, <RegexURLPattern None ^about/>], [<RegexURLResolver <module 'applications.websites.urls' from '/home/guinsly/development/public/project/ohmy404/applications/websites/urls.py'> (None:None) ^>, <RegexURLPattern websites_list ^$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/core/handlers/base.py", line 87, in get_exception_response
+    response = callback(request, **param_dict)
+  File "/home/guinsly/development/public/project/ohmy404/applications/websites/views.py", line 49, in handler404
+    response = render(request, 'page_not_found.html')
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 919, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/template/base.py", line 919, in render_node
+    return node.render(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/templatetags/static.py", line 105, in render
+    url = self.url(context)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 16, in url
+    return static(path)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 9, in static
+    return staticfiles_storage.url(path)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 131, in url
+    hashed_name = self.stored_name(clean_name)
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 280, in stored_name
+    cache_name = self.clean_name(self.hashed_name(name))
+  File "/home/guinsly/.pyenv/versions/django1.9.3.4.3/lib/python3.4/site-packages/django/contrib/staticfiles/storage.py", line 94, in hashed_name
+    (clean_name, self))
+ValueError: The file 'css/Demo.css' could not be found with <pipeline.storage.PipelineCachedStorage object at 0xb488538c>.

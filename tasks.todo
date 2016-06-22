@@ -8,13 +8,15 @@ todo-mvp:
   ☐ Add sugbox
 ☐ Send a Suggies instead of 'Add' a suggies
 ☐ Settings to setup for Production
-☐ Title the title GITHUB.COM
+✔ Title the title GITHUB.COM @done(2016-06-21 22:55)
+☐ Add react.js
 ✔ Add date added @done(2016-06-08 17:41)
   ✔ Css to add in a file @done(2016-06-08 17:41)
 
 
 out-of-the-MVC:
 ☐ A websites can Have many images
+☐ Configuration to change like for
 ☐ Test to do.
 ☐ Add social so that user can vote 404
 ☐ Add a click counter (AJAX)

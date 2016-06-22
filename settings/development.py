@@ -1,6 +1,6 @@
 from .base import *
 
-DEBUG = True
+DEBUG = False
 
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -35,7 +35,7 @@ STATICFILES_DIRS = (
 ALLOWED_HOSTS = ['*']
 
 
-
+'''
 #Pipeline for staticfiles
 STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
 STATICFILES_FINDERS = (
@@ -62,3 +62,4 @@ PIPELINE = {
         },
     },
 }
+'''
