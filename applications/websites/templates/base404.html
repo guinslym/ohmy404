@@ -8,8 +8,8 @@
         <title>Vidage.js</title>
 
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,100" />
-        <link rel="stylesheet" href="{% static 'css/Demo.css' %}" >
-        <link rel="stylesheet" href="{% static 'css/Vidage.css' %}" >
+        <link rel="stylesheet" href="https://dvlden.github.io/Vidage/styles/Demo.css" >
+        <link rel="stylesheet" href="https://dvlden.github.io/Vidage/styles/Vidage.css" >
         <!--
         <link rel="stylesheet" href="{% static 'css/styles.css'%}" >
         -->
@@ -22,8 +22,8 @@
             <div class="Vidage__image"></div>
 
             <video id="VidageVideo" class="Vidage__video" preload="metadata" loop autoplay muted>
-                <source src="{% static 'videos/bg.webm' %}" type="video/webm">
-                <source src="{% static 'videos/bg.mp4' %}" type="video/mp4">
+                <source src="https://dvlden.github.io/Vidage/videos/bg.webm" type="video/webm">
+                <source src="https://dvlden.github.io/Vidage/videos/bg.mp4" type="video/mp4">
             </video>
 
             <div class="Vidage__backdrop"></div>
@@ -45,7 +45,7 @@
         </a>
 
         <!-- Vidage init -->
-        <script src="{% static 'js/Vidage.min.js' %}"></script>
+        <script src="https://dvlden.github.io/Vidage/scripts/Vidage.min.js"></script>
         <script>
             new Vidage('#VidageVideo');
         </script>
